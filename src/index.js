@@ -8,6 +8,8 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
+const API_KEY = ENV['GOOGLE_API_KEY']
+
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
