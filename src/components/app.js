@@ -13,7 +13,7 @@ export default class App extends Component {
 
     this.state = { videos: [] }; 
 
-    YTSearch({key: API_KEY, term: 'surfboars'}, (videos) => {
+    YTSearch({key: API_KEY, term: 'triathlon'}, (videos) => {
       this.setState({ videos });
       // this.setState({ videos: videos });
     });
