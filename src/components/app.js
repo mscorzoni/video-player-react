@@ -3,6 +3,7 @@ import SearchBar from './search_bar';
 import YTSearch from 'youtube-api-search';
 import REACT_APP_GOOGLE_API_KEY from '../.././env';
 import VideoList from './video_list';
+import VideoDetail from './video_detail';
 
 
 const API_KEY = REACT_APP_GOOGLE_API_KEY;
@@ -26,6 +27,7 @@ export default class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoDetail video={this.state.videos[0]}/>
         <VideoList videos={this.state.videos} />
       </div>
     );
